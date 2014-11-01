@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>mdslides</title>
+</head>
+<body>
+
+<h1>mdslides - Generate HTML5-Presentations from Markdown Files</h1>
+
+<h2>Generate from External Url</h2>
+
+<form method="get" action="show.html">
+    <label>Url (e.g. https://gist.github.com/3d508cc2d44ea991f918)</label> <input type="text" name="url" value=""  style="width: 400px"/>
+    <input type="submit" value="Render as Presentation" />
+</form>
+
+<h2>Example</h2>
+
+<ul>
+    <li><a href="http://mdslides.erstmal.com/show.html?url=https%3A%2F%2Fgist.github.com%2F3d508cc2d44ea991f918">Sample Presentation</a> (<a href="https://gist.github.com/3d508cc2d44ea991f918">Source</a>)</li>
+</ul>
+
+<h2>Rules</h2>
+
+<ul>
+    <li>Use # for the prensentation title and ## for the section titles</li>
+    <li>The first image will be used as background image</li>
+    <li>If no text is given after the section headline, it will be used as <strong>shout</strong></li>
+</ul>
+
+<h2>Credits</h2>
+
+Created by <a href="http://dracoblue.net">DracoBlue</a> (<a href="https://github.com/DracoBlue>">@DracoBlue</a>) in December 2012. Uses <a href="https://github.com/coreyti/showdown">showdown.js</a> (for markdown to html conversion), <a href="https://github.com/jquery/jquery">jquery</a> (for dom manipulation) and <a href="https://github.com/shower/shower">shower</a> (for the awesome template and html5 slides logic).
+</body>
