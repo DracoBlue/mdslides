@@ -129,7 +129,13 @@ if (!url)
     alert('No url given, please select one first!');
     document.location = '/';
 } else if (url.match(/gist.github.com/)) {
-    var gist_id = ("https://api.github.com/gists/3d508cc2d44ea991f918".match(/gists\/(.+)/) || [])[1] || "";
+    /* Try gist.github.com/gists/:id */
+    var gist_id = (url.match(/gists\/(.+)/) || [])[1] || "";
+    if (!gist_id)
+    {
+        /* Try gist.github.com/:id */
+        gist_id = (url.match(/gist\.github\.com\/(.+)/) || [])[1] || "";
+    }
     if (!gist_id)
     {
         alert('Invalid gist_id');
